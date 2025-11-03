@@ -1,0 +1,87 @@
+.add-medicine-container {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.add-medicine-content {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.add-medicine-wrapper {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.add-medicine-wrapper .form-title {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.add-medicine-wrapper .form-group {
+  margin-bottom: 20px;
+}
+
+.add-medicine-wrapper .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.add-medicine-wrapper .form-group input,
+.add-medicine-wrapper .form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  font-family: inherit;
+}
+
+.add-medicine-wrapper .form-group input:focus,
+.add-medicine-wrapper .form-group textarea:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.add-medicine-wrapper .form-group input.error-input,
+.add-medicine-wrapper .form-group textarea.error-input {
+  border-color: #f44336;
+}
+
+.add-medicine-wrapper .error-message {
+  color: #f44336;
+  font-size: 0.875rem;
+  margin-top: 5px;
+  display: block;
+}
+
+.add-medicine-wrapper .submit-button {
+  width: 100%;
+  padding: 14px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 20px;
+}
+
+.add-medicine-wrapper .submit-button:hover:not(:disabled) {
+  background: #388e3c;
+}
+
+.add-medicine-wrapper .submit-button:disabled {
+  background: #a5d6a7;
+  cursor: not-allowed;
+}

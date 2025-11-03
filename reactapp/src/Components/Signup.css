@@ -1,0 +1,141 @@
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e8f5e9 0%, #a5d6a7 100%);
+  padding: 20px;
+}
+
+.signup-card {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.signup-left {
+  flex: 1;
+  background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
+  color: white;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup-right {
+  flex: 1.2;
+  padding: 40px;
+  background: #f0f9f8;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.signup-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #2e7d32;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 14px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+.signup-button:hover:not(:disabled) {
+  background: #00695c;
+}
+
+.signup-button:disabled {
+  background: #80cbc4;
+  cursor: not-allowed;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
+
+.login-link a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 90%;
+}
+
+.modal-content h3 {
+  color: #4caf50;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+.modal-button {
+  padding: 12px 40px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modal-button:hover {
+  background: #388e3c;
+}
+
+@media (max-width: 768px) {
+  .signup-card {
+    flex-direction: column;
+  }
+
+  .signup-left {
+    padding: 30px;
+  }
+
+  .signup-right {
+    padding: 30px;
+    max-height: none;
+  }
+}

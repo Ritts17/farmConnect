@@ -1,0 +1,65 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Build artifacts
+dist/
+build/
+*.tgz
+
+# Environment variables
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.DS_Store
+Thumbs.db
+
+# Test coverage
+tests/
+coverage/
+
+# Temporary files
+tmp/
+temp/
+
+#Test files
+**/App.test.js
+**/*.test.js
+**/setupTests.js
+**/axios.js
+server.test.js
+App.test.js
+axios.js
+setupTests.js
+
+# Uploads
+uploads/
+
+# OS generated files
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Other
+package-lock.json # If using yarn, this can be ignored
+yarn.lock # If using npm, this can be ignored
+pnpm-lock.yaml # If using npm/yarn, this can be ignored
+
+#package.json 
+package.json
